@@ -1,6 +1,8 @@
 #include <stdio.h> 
 /*
- * This main function is to display output to the user
+ * main - Entry point
+ *
+ * Description: This main function is to display output to the user
  * using the printf function
  * /
 int main(void)

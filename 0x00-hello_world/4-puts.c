@@ -1,6 +1,8 @@
 #include <stdio.h>
 /*
- * This main function is to output a text to the user
+ * main -Entry point
+ *
+ * Description: This main function is to output a text to the user
  * using puts function
  */
 int main(void)
