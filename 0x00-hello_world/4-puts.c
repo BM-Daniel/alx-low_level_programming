@@ -4,6 +4,8 @@
  *
  * Description: This main function is to output a text to the user
  * using puts function
+ *
+ * Return: Always display 0 as output
  */
 int main(void)
 {

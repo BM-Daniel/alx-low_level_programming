@@ -1,9 +1,11 @@
 #include <stdio.h> 
-/*
+/**
  * main - Entry point
  *
  * Description: This main function is to display output to the user
  * using the printf function
+ *
+ * Return: Always show 0 as output
  * /
 int main(void)
 {
