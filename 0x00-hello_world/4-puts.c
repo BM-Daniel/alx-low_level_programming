@@ -1,5 +1,5 @@
 #include <stdio.h>
-/*
+/**
  * main -Entry point
  *
  * Description: This main function is to output a text to the user
