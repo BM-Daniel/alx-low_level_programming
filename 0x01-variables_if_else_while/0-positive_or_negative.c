@@ -3,14 +3,11 @@
 #include <stdio.h>
 
 /**
- * main - the entry point of the program
+ * main - entry point
  *
- * Description: This program will assign a random number
- * to the variable n each time it is executed
- * Complete the source code in order to print whether the
- * number stored in the variable n is positive or negative
+ * Description:
  *
- * Return: Always exit with code 0
+ * Return: Always 0 (SUCCESS)
  */
 
 int main(void)
@@ -18,7 +15,8 @@ int main(void)
 	int n;
 
 	srand(time(0));
-	n = rand () - RAND_MAX / 2;
+	n = rand() - RAND_MAX / 2;
+	
 	if (n > 0)
 	{
 		printf("%d is positive\n", n);
