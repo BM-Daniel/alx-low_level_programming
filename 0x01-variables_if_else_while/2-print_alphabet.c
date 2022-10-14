@@ -13,7 +13,7 @@ int main(void)
 {
 	char alphabet_value = 97;
 
-	while(alphabet_value <= 122)
+	while (alphabet_value <= 122)
 	{
 		putchar(alphabet_value);
 		alphabet_value++;

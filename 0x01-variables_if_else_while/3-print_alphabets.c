@@ -14,18 +14,18 @@ int main(void)
 	char lowercase_value = 97;
 	char uppercase_value = 65;
 
-	while(lowercase_value <= 122)
+	while (lowercase_value <= 122)
 	{
 		putchar(lowercase_value);
 		lowercase_value++;
 	}
 
-	while(uppercase_value <= 90)
+	while (uppercase_value <= 90)
 	{
 		putchar(uppercase_value);
 		uppercase_value++;
 	}
-	
+
 	putchar('\n');
 
 	return (0);
