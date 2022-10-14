@@ -4,8 +4,8 @@
  * main - entry point to program
  *
  * Description: Write a program that prints the alphabet
-in lowercase, followed by a new line. Letter q and e will
-be left out
+ * in lowercase, followed by a new line. Letter q and e will
+ * be left out
  *
  * Return: Always exit with code 0
  */
@@ -14,7 +14,7 @@ int main(void)
 {
 	char alphabet_value = 97;
 
-	while(alphabet_value <= 122)
+	while (alphabet_value <= 122)
 	{
 		if (alphabet_value == 101 || alphabet_value == 113)
 		{
