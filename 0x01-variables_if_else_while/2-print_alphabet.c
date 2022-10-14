@@ -3,12 +3,13 @@
 /**
  * main - entry point to program
  *
- * Description: Write a program that prints the alphabet in lowercase, followed by a new line
+ * Description: Write a program that prints the alphabet
+ * in lowercase, followed by a new line
  *
  * Return: Always exit with code 0
  */
 
-int main (void)
+int main(void)
 {
 	char alphabet_value = 97;
 

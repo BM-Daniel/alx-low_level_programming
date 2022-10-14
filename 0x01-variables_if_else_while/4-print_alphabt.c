@@ -3,12 +3,14 @@
 /**
  * main - entry point to program
  *
-i * Description: Write a program that prints the alphabet in lowercase, followed by a new line. Letter q and e will be left out
+ * Description: Write a program that prints the alphabet
+in lowercase, followed by a new line. Letter q and e will
+be left out
  *
  * Return: Always exit with code 0
  */
 
-int main (void)
+int main(void)
 {
 	char alphabet_value = 97;
 
