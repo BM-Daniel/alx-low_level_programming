@@ -10,7 +10,7 @@
  * Return: Always exit with code 0
  */
 
-int main (void)
+int main(void)
 {
 	int ascii_zero = 48;
 	int ascii_nine = 57;
