@@ -18,10 +18,11 @@ void times_table(void)
 			result = i * j;
 			left_digit = result / 10;
 			right_digit = result % 10;
-			
+
 			if (j == 0)
 			{
 				_putchar('0');
+				continue;
 			}
 
 			if (result <= 9)
