@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
  * multiply_and_add - A function to sum up the multiples
@@ -31,8 +31,8 @@ int main(void)
 	int sum2 = multiply_and_add(number2);
 
 	int total = sum1 + sum2;
-
-	_putchar('\n');
+	
+	printf("%d\n", total);
 
 	return (0);
 }
