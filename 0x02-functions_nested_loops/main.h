@@ -2,18 +2,6 @@
 #define MAIN_H
 
 
-/**
- * main.h - This header file will contain the prototype of all functions
- * that will be created
- *
- * _putchar - function for printing out a character to stdout
- * @letter: variable to store just a character
- * Return: Always exit with a character
- *
- * print_alphabet - function to print lower case alphabets
- */
-
-
 int _putchar(char letter);
 void print_alphabet(void);
 void print_alphabet_x10(void);
@@ -29,5 +17,6 @@ int add(int, int);
 void print_to_98(int n);
 
 void print_times_table(int n);
+
 
 #endif
