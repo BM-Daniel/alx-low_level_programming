@@ -11,9 +11,9 @@
 
 int main(void)
 {
-	long unsigned int i, c;
-	long unsigned int a = 1;
-	long unsigned int b = 2;
+	unsigned long int i, c;
+	unsigned long int a = 1;
+	unsigned long int b = 2;
 
 	printf("%lu, ", a);
 	printf("%lu, ", b);
