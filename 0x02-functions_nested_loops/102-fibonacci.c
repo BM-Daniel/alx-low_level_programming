@@ -11,23 +11,23 @@
 
 int main(void)
 {
-	unsigned int i, c;
-	unsigned int a = 1;
-	unsigned int b = 2;
+	long int i, c;
+	long int a = 1;
+	long int b = 2;
 
-	printf("%u, ", a);
-	printf("%u, ", b);
+	printf("%ld, ", a);
+	printf("%ld, ", b);
 
-	for(i = 3; i <= 50; i++)
+	for (i = 3; i <= 50; i++)
 	{
 		c = a + b;
-		if (i == 49)
+		if (i == 50)
 		{
-			printf("%u", c);
+			printf("%ld", c);
 			continue;
 		}
 
-		printf("%u, ", c);
+		printf("%ld, ", c);
 
 		a = b;
 		b = c;

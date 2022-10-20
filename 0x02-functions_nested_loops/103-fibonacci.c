@@ -24,7 +24,7 @@ int main(void)
 	while (1)
 	{
 		c = a + b;
-		
+
 		if (c > 4000000)
 		{
 			break;
