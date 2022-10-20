@@ -1,15 +1,4 @@
 #include <stdio.h>
-
-/**
- * multiply_and_add - A function to sum up the multiples
- *
- * @number: Number needed to find multiples
- *
- * Return: Exit with the sum
- */
-
-int multiply_and_add(int number);
-
 /**
  * main - Main entry of file
  *
@@ -26,37 +15,26 @@ int main(void)
 {
 	int number1 = 3;
 	int number2 = 5;
-
-	int sum1 = multiply_and_add(number1);
-	int sum2 = multiply_and_add(number2);
-
-	int total = sum1 + sum2;
-	
-	printf("%d\n", total);
-
-	return (0);
-}
-
-
-/**
- * multiply_and_add - This function will add up the multiples of a
- * number less than 1024
- *
- * @number: Value needed to find multiples
- *
- * Return: Exit with the sum
- */
-
-int multiply_and_add(int number)
-{
-	int i = 0;
 	int sum = 0;
+	int i = 0;
+	int j = 0;
 
-	while ((i * number) < 1024)
+	while ((i * number1) < 1024)
 	{
-		sum += (i * number);
+		sum += (i * number1);
 		i++;
 	}
 
-	return (sum);
+	while ((j * number2) < 1024)
+	{
+		if ((j * number2) % 3 != 0)
+		{
+			sum += (j * number2);
+		}
+		j++;
+	}
+
+	printf("%d\n", sum);
+
+	return (0);
 }
