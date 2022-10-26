@@ -23,7 +23,7 @@ void puts_half(char *str)
 	}
 	else
 	{
-		mid_count = (count - 1) / 2;
+		mid_count = ((count - 1) / 2) + 1;
 	}
 
 	for (count = mid_count; str[count] != '\0'; count++)
