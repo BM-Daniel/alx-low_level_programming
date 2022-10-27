@@ -13,19 +13,12 @@ void reverse_array(int *a, int n)
 	int temp;
 	int i = 0;
 
-	if (n % 2 == 0)
+	while (i < (n / 2))
 	{
+		temp = a[i];
+		*(a + i) = *(a + (n - i - 1));
+		*(a + (n - i - 1)) = temp;
 
-	}
-	else
-	{
-
-	}
-
-	while (n >= 0)
-	{
-		*(temp + i) = a[n - 1];
 		i++;
-		n--;
 	}
 }
