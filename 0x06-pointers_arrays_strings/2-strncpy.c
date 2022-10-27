@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * _strncpy - Write a function that copies a string
@@ -20,9 +21,10 @@ char *_strncpy(char *dest, char *src, int n)
 		i++;
 	}
 
-	if (src[i] == '\0')
+	while (i < n)
 	{
 		*(dest + i) = '\0';
+		i++;
 	}
 
 	return (dest);
