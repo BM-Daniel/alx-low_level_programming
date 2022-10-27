@@ -23,38 +23,17 @@ int count(char *ptr);
 
 int _strcmp(char *s1, char *s2)
 {
-	int s1_length, s2_length;
+	int i = 0;
 
-	s1_length = count(s1);
-	s2_length = count(s2);
-
-
-	if (s1_length > s2_length)
+	while ((s1[i] != '\0') || (s2[i] != '\0'))
 	{
-		return (15);
+		if (s1[i] != s2[i])
+		{
+			return (s1[i] - s2[i]);
+		}
+
+		i++;
 	}
-	else if (s2_length > s1_length)
-	{
-		return (-15);
-	}
-	else
-	{
-		return (0);
-	}
-}
 
-/**
- * count - A function to count the strings in each variable
- * @ptr: Check above for detail
- * Return: Info above 
- */
-
-int count(char *ptr)
-{
-	int  i;
-
-	for (i = 0; ptr[i] != '\0'; i++)
-		;
-
-	return (i);
+	return (0);
 }
