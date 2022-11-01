@@ -12,15 +12,19 @@
 
 char *_strchr(char *s, char c)
 {
-	int location;
+	int location = 0;
 
-	for (location = 0; s[location] != '\0'; location++)
+	while ((s[location] != c) && (s[location] != '\0'))
 	{
-		if (s[location] == c)
-		{
-			return (s + location);
-		}
+		location++;
 	}
 
-	return ('\0');
+	if (s[location] == c)
+	{
+		return (s + location);
+	}
+	else
+	{
+		return (NULL);
+	}
 }
