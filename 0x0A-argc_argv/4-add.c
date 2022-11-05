@@ -21,21 +21,23 @@ int main(int argc, char *argv[])
 		printf("0\n");
 		exit(0);
 	}
-
-	for (i = 1; i < argc; i++)
+	else
 	{
-		if (atoi(argv[i]) == 0)
+		for (i = 1; i < argc; i++)
 		{
-			printf("Error\n");
-			return (1);
+			if (atoi(argv[i]) == 0)
+			{
+				printf("Error\n");
+				return (1);
+			}
+			else
+			{
+				sum += atoi(argv[i]);
+			}
 		}
-		else
-		{
-			sum += atoi(argv[i]);
-		}
-	}
 
-	printf("%d\n", sum);
+		printf("%d\n", sum);
+	}
 
 	return (0);
 }
