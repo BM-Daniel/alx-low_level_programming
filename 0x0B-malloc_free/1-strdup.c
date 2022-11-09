@@ -30,7 +30,7 @@ char *_strdup(char *str)
 		i++;
 	}
 
-	duplicate = malloc(count * sizeof(char));
+	duplicate = malloc((1 + count) * sizeof(char));
 
 	if (duplicate == NULL)
 	{
@@ -43,6 +43,7 @@ char *_strdup(char *str)
 		j++;
 	}
 
+	duplicate[count] = '\0';
 
 	return (duplicate);
 }
