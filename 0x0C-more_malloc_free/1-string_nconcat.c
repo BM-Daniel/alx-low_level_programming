@@ -37,7 +37,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	char *concat;
 	int i = 0;
 	int j, size = n;
-	int s1_length, s2_length;
+	int total, s1_length, s2_length;
 
 
 	if (s1 == NULL)
@@ -57,7 +57,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		size = s2_length;
 	}
 
-	concat = malloc(sizeof(*concat) * (1 + s1_length + size));
+	total = s1_length + size + 1;
+	concat = malloc(sizeof(*concat) * total);
 
 	if (concat == NULL)
 	{
@@ -81,6 +82,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		i++;
 		j++;
 	}
+
+	concat[total - 1] = '\0';
 
 	return (concat);
 }
