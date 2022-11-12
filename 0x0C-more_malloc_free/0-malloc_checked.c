@@ -4,7 +4,9 @@
 /**
  * malloc_checked - Write a function that allocates memory using malloc
  *
- * @b:
+ * @b: Number of byte size
+ *
+ * Return: Exit with memory address
  */
 
 void *malloc_checked(unsigned int b)
