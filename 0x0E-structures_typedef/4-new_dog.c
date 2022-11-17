@@ -42,6 +42,8 @@ char *_strcpy(char *dest, char *src)
 		i++;
 	}
 
+	dest[i] = '\0';
+
 	return (dest);
 }
 
@@ -71,7 +73,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 
 
-	dogCopy->name = malloc(sizeof(dogCopy->name) * _strlen(name));
+	dogCopy->name = malloc(sizeof(dogCopy->name) * (_strlen(name) + 1));
 
 	if (dogCopy->name == NULL)
 	{
@@ -79,7 +81,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 
-	dogCopy->owner = malloc(sizeof(dogCopy->owner) * _strlen(owner));
+	dogCopy->owner = malloc(sizeof(dogCopy->owner) * (_strlen(owner) + 1));
 
 	if (dogCopy->owner == NULL)
 	{
