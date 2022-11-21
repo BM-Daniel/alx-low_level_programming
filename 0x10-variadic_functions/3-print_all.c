@@ -75,7 +75,7 @@ void print_all(const char * const format, ...)
 	int i = 0, j = 0;
 	char *punctuation = "";
 
-	struct_blueprint functions[] = {
+	blueprint functions[] = {
 		{"c", print_character},
 		{"i", print_integer},
 		{"f", print_float},
