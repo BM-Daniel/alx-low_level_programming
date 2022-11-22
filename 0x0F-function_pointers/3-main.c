@@ -6,6 +6,9 @@
 /**
  * main - Write a program that performs simple operations
  *
+ * @argc: Argument count
+ * @argv: Argument vector
+ *
  * Return: Exit with 0 as success
  */
 
@@ -13,8 +16,6 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 {
 	int num1, num2;
 	char *op;
-
-	printf("Start2");
 
 	if (argc != 4)
 	{
@@ -32,7 +33,8 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 		exit(99);
 	}
 
-	if ((num2 == 0 && *op == '/') || (num2 == 0 && *op == '%'))
+	if ((*op == '/' && num2 == 0) ||
+			(*op == '%' && num2 == 0))
 	{
 		printf("Error\n");
 		exit(100);

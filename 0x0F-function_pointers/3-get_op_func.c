@@ -7,6 +7,8 @@
  * to declare any other function.
  *
  * @s: is the operator passed as argument to the program
+ *
+ * Return: A pointer to the function needed for the operation
  */
 
 int (*get_op_func(char *s))(int, int)
@@ -21,10 +23,8 @@ int (*get_op_func(char *s))(int, int)
 	};
 	int i = 0;
 
-	while (*(ops[i].op) != *s && ops[i].op != NULL)
+	while (ops[i].op != NULL && *(ops[i].op) != *s)
 		i++;
-
-	printf("%d", i);
 
 	return (ops[i].f);
 }
