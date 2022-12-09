@@ -76,8 +76,7 @@ int main(int argc, char *argv[])
 	readValue = read(file_from, buffer, 1024);
 	file_to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 
-	do
-	{
+	do {
 		if (file_from == -1 || readValue == -1)
 		{
 			dprintf(STDERR_FILENO, "Can't read from file %s\n",
