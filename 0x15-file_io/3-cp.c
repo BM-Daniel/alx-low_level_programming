@@ -76,7 +76,7 @@ int main(int argc, char *argv[])
 	readValue = read(file_from, buffer, 1024);
 	file_to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 
-	while (readValue > 0)
+	do
 	{
 		if (file_from == -1 || readValue == -1)
 		{
@@ -98,7 +98,7 @@ int main(int argc, char *argv[])
 		readValue = read(file_from, buffer, 1024);
 		file_to = open(argv[2], O_WRONLY | O_APPEND);
 
-	}
+	} while (readValue > 0);
 
 
 	free(buffer);
