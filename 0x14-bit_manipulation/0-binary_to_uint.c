@@ -13,20 +13,18 @@
 
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int number = 0;
-	int length = 0;
+	unsigned int num = 0;
+	int len = 0;
 
-	if (b[length] == '\0')
+	if (b[len] == '\0')
 		return (0);
 
-	while ((b[length] == '0') || (b[length] == '1'))
+	while ((b[len] == '0') || (b[len] == '1'))
 	{
-		number <<= 1;
-		number += b[length] - '0';
-		length++;
+		num <<= 1;
+		num += b[len] - '0';
+		len++;
 	}
 
-	return (number);
+	return (num);
 }
-
-
