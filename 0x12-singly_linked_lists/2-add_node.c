@@ -3,36 +3,37 @@
 /**
  * add_node - Write a function that adds a new node at the beginning of a
  * list_t list.
- * @head:
- * @str:
+ * @head: A pointer to the head of the linked list
+ * @str: String to be added to the list
  *
  * Return: the address of the new element, or NULL if it failed
  */
 
 list_t *add_node(list_t **head, const char *str)
 {
-	list_t *node;
-	size_t count = 0;
-	char *str_dup;
+	list_t *new;
+	char *dup_str;
+	int len;
 
-
-	str_dup = strdup(str);
-	if (str_dup == NULL)
+	new = malloc(sizeof(list_t));
+	if (new == NULL)
 		return (NULL);
 
-	while (str[count])
-		count++
-
-
-	node = malloc(sizeof(list_t));
-	if (node == NULL)
+	dup_str = strdup(str);
+	if (dup_str == NULL)
+	{
+		free(new);
 		return (NULL);
+	}
 
-	node->str = str_dup;
-	node->len = count;
-	node->next = *head;
-	*head = node;
+	for (len = 0; str[len];)
+		len++;
 
-	return (node);
+	new->str = dup_str;
+	new->len = len;
+	new->next = *head;
 
+	*head = new;
+
+	return (new);
 }
